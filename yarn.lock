@@ -2735,9 +2735,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"decaft.com@workspace:pkgs/website":
+"decaft.com@workspace:pkgs/www":
   version: 0.0.0-use.local
-  resolution: "decaft.com@workspace:pkgs/website"
+  resolution: "decaft.com@workspace:pkgs/www"
   dependencies:
     "@babel/core": ^7.12.10
     "@emotion/babel-plugin": ^11.1.2
