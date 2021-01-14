@@ -8,5 +8,10 @@
   "license": "UNLICENSED",
   "workspaces": [
     "pkgs/*"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
 }
