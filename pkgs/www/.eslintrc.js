@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const baseConfig = require("../../.eslintrc.base.js");
 module.exports = {
   env: {
     browser: true,
@@ -5,27 +7,19 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended",
+    "../../.eslintrc.base.js",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    // Excludes ESLint's rules that conflict with prettier
-    "prettier",
-    "prettier/@typescript-eslint",
     "prettier/react",
   ],
-  parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 12,
-    sourceType: "module",
+    ...baseConfig.parserOptions,
+    ecmaFeatures: { jsx: true },
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: [...baseConfig.plugins, "react", "@emotion"],
   rules: {
     "react/react-in-jsx-scope": "off", // not necessary anymore
     "react/prop-types": "off", // typescript handles types already
-    "@typescript-eslint/consistent-type-definitions": ["warn", "interface"], // interfaces more performant
+    "@emotion/pkg-renaming": "error",
   },
   settings: { react: { version: "detect" } },
 };

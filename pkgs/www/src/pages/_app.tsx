@@ -1,7 +1,8 @@
-import '../styles/globals.css'
+import { AppComponent } from "next/dist/next-server/lib/router/router";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp: AppComponent = ({ Component, pageProps }) => {
+  return <Component {...pageProps} />;
+};
 
-export default MyApp
+export default MyApp;

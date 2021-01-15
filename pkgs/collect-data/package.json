@@ -1,0 +1,25 @@
+{
+  "name": "collect-data",
+  "version": "0.0.0",
+  "description": "Script to find up to date data on decaf coffee",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "author": "Omar Diab <me@omardiab.com>",
+  "scripts": {
+    "run": "ts-node src/index.ts",
+    "eslint": "eslint --ignore-path .prettierignore",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-emotion": "^10.0.27",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

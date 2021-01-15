@@ -414,6 +414,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/eslint-plugin@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@emotion/eslint-plugin@npm:11.0.0"
+  peerDependencies:
+    eslint: 6 || 7
+  checksum: ba572dd80f54b4a859588db5784b5931df1d32e37ca784451a8bcb0694b04dbfb4bd1741b955a5efb3cdd91fd06083282074ae2aef08121f730dd8ef62a0790a
+  languageName: node
+  linkType: hard
+
 "@emotion/hash@npm:^0.8.0":
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
@@ -775,7 +784,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.6.1":
+"@typescript-eslint/eslint-plugin@npm:^4.13.0":
   version: 4.13.0
   resolution: "@typescript-eslint/eslint-plugin@npm:4.13.0"
   dependencies:
@@ -1304,6 +1313,13 @@ __metadata:
     delegates: ^1.0.0
     readable-stream: ^2.0.6
   checksum: 2d6fdb0ddde9b8cb120b6851b42c75f6b6db78b540b579a00d144ad38cb9e1bdf1248e5454049fcf5b47ef61d1a6f2ea433a8e38984158afd441bc1e0db7a625
+  languageName: node
+  linkType: hard
+
+"arg@npm:^4.1.0":
+  version: 4.1.3
+  resolution: "arg@npm:4.1.3"
+  checksum: 81b3b40b1529c4fbf75b12f7c3e6fb2dcce9e78072063babc169de9b4f40777788f3d2b04380f659ef676a756e03ccfbfe78adf4477353bda906295fa69dab89
   languageName: node
   linkType: hard
 
@@ -2288,6 +2304,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"collect-data@workspace:pkgs/collect-data":
+  version: 0.0.0-use.local
+  resolution: "collect-data@workspace:pkgs/collect-data"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^4.13.0
+    "@typescript-eslint/parser": ^4.6.1
+    eslint: ^7.17.0
+    eslint-config-prettier: ^6.15.0
+    eslint-plugin-emotion: ^10.0.27
+    prettier: ^2.2.1
+    ts-node: ^9.1.1
+    typescript: ^4.1.3
+  languageName: unknown
+  linkType: soft
+
 "collection-visit@npm:^1.0.0":
   version: 1.0.0
   resolution: "collection-visit@npm:1.0.0"
@@ -2557,6 +2588,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-require@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "create-require@npm:1.1.1"
+  checksum: babd307893abfb26d77ae11cb9d6b6cfa6d18c9cee435cf70b5a3fb44aa8d90c9ec26ea89cbb16e0a94b8d34f5fcaee164b90ed526cdd3158955673ab9652d01
+  languageName: node
+  linkType: hard
+
 "cross-fetch@npm:3.0.6":
   version: 3.0.6
   resolution: "cross-fetch@npm:3.0.6"
@@ -2786,7 +2824,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "decaft-monorepo@workspace:."
   dependencies:
+    "@typescript-eslint/eslint-plugin": ^4.13.0
+    "@typescript-eslint/parser": ^4.6.1
     eslint: ^7.17.0
+    eslint-config-prettier: ^6.15.0
     prettier: ^2.2.1
     typescript: ^4.1.3
   languageName: unknown
@@ -2800,14 +2841,14 @@ __metadata:
     "@emotion/babel-plugin": ^11.1.2
     "@emotion/babel-preset-css-prop": ^11.0.0
     "@emotion/core": ^11.0.0
+    "@emotion/eslint-plugin": ^11.0.0
     "@emotion/react": ^11.1.4
     "@types/node": ^14.14.6
     "@types/react": ^16.9.55
-    "@typescript-eslint/eslint-plugin": ^4.6.1
+    "@typescript-eslint/eslint-plugin": ^4.13.0
     "@typescript-eslint/parser": ^4.6.1
-    eslint: ^7.12.1
+    eslint: ^7.17.0
     eslint-config-prettier: ^6.15.0
-    eslint-plugin-emotion: ^10.0.27
     eslint-plugin-react: ^7.21.5
     file-loader: ^6.2.0
     img-loader: ^3.0.2
@@ -2815,7 +2856,7 @@ __metadata:
     next-compose-plugins: ^2.2.0
     next-optimized-images: 3.0.0-canary.10
     optimized-images-loader: ^0.4.0
-    prettier: ^2.1.2
+    prettier: ^2.2.1
     react: 17.0.1
     react-dom: 17.0.1
     react-optimized-image: ^0.4.1
@@ -2946,6 +2987,13 @@ __metadata:
   bin:
     detect-libc: ./bin/detect-libc.js
   checksum: 6cec442139459ec2e8517076974b0eba42079885938683eca013c2e0b5db02ef048870725ce68e7ac8e4cf17e482f67d7322f45bbc5f203b7332817bc7833b39
+  languageName: node
+  linkType: hard
+
+"diff@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "diff@npm:4.0.2"
+  checksum: 81b5cd7ddde6f0ba2a532d434cfdca365aedd6cc62bb133e851e66e071d40382a30924a07c1034bd3d5a2e332146f64514b73c06fe2ebc0490a67f0c98da79fb
   languageName: node
   linkType: hard
 
@@ -3405,7 +3453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.12.1, eslint@npm:^7.17.0":
+"eslint@npm:^7.17.0":
   version: 7.17.0
   resolution: "eslint@npm:7.17.0"
   dependencies:
@@ -5136,6 +5184,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"make-error@npm:^1.1.1":
+  version: 1.3.6
+  resolution: "make-error@npm:1.3.6"
+  checksum: 2c780bab8409b865e8ee86697c599a2bf2765ec64d21eb67ccda27050e039f983feacad05a0d43aba3c966ea03d305d2612e94fec45474bcbc61181f57c5bb88
+  languageName: node
+  linkType: hard
+
 "map-cache@npm:^0.2.2":
   version: 0.2.2
   resolution: "map-cache@npm:0.2.2"
@@ -6332,7 +6387,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.2, prettier@npm:^2.2.1":
+"prettier@npm:^2.2.1":
   version: 2.2.1
   resolution: "prettier@npm:2.2.1"
   bin:
@@ -7301,7 +7356,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19":
+"source-map-support@npm:^0.5.17, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19":
   version: 0.5.19
   resolution: "source-map-support@npm:0.5.19"
   dependencies:
@@ -7964,6 +8019,27 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"ts-node@npm:^9.1.1":
+  version: 9.1.1
+  resolution: "ts-node@npm:9.1.1"
+  dependencies:
+    arg: ^4.1.0
+    create-require: ^1.1.0
+    diff: ^4.0.1
+    make-error: ^1.1.1
+    source-map-support: ^0.5.17
+    yn: 3.1.1
+  peerDependencies:
+    typescript: ">=2.7"
+  bin:
+    ts-node: dist/bin.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: a90db4a342872cd0e7a80babdfcb15d2f7c06e700d735003098f7cc79db575c3380580c58a19ae0d0eaab553af083651d4237060c92170e6f8ac4e64693113ea
+  languageName: node
+  linkType: hard
+
 "ts-pnp@npm:^1.1.6":
   version: 1.2.0
   resolution: "ts-pnp@npm:1.2.0"
@@ -8472,6 +8548,13 @@ typescript@^4.1.3:
   version: 1.10.0
   resolution: "yaml@npm:1.10.0"
   checksum: d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c
+  languageName: node
+  linkType: hard
+
+"yn@npm:3.1.1":
+  version: 3.1.1
+  resolution: "yn@npm:3.1.1"
+  checksum: bff63b80568d80c711670935427494dde47cdf97e8b04196b140ce0af519c81c5ee857eddad0caa8b422dd65aea0157bbfaacbb1546bebba623f0f383d5d9ae5
   languageName: node
   linkType: hard
 
