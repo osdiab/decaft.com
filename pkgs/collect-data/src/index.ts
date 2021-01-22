@@ -69,7 +69,7 @@ async function main() {
   }
 
   const popularWebsiteCountsSorted = Object.entries(websiteCounts)
-    .filter(([_, count]) => count > 3)
+    .filter(([, count]) => count > 3)
     .sort((a, b) => b[1] - a[1])
     .map(([url, count]) => ({ url, count }));
 
