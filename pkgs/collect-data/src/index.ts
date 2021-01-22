@@ -6,9 +6,9 @@ import { partition } from "fp-ts/Array";
 import { pipe } from "fp-ts/function";
 
 /**
- * Origins without leading www of large coffee stores, not craft stuff
+ * Hostnames without leading www of large coffee stores, not craft stuff
  */
-const MASS_MARKET_ORIGINS = new Set([
+const MASS_MARKET_HOSTNAMES = new Set([
   "doutor.co.jp",
   "starbucks.co.jp",
   "tullys.co.jp",
@@ -18,7 +18,7 @@ const MASS_MARKET_ORIGINS = new Set([
   "kohikan.jp",
 ]);
 
-function normalizedOriginForUrl(url: string): string | null {
+function normalizedHostnameForUrl(url: string): string | null {
   try {
     return new URL(url).hostname.replace(/(?:www\.)?/, "");
   } catch (err: unknown) {
@@ -46,8 +46,8 @@ async function main() {
     )
   ).map((result) => ({
     ...result,
-    normalizedOrigin: result.websiteUrl
-      ? normalizedOriginForUrl(result.websiteUrl)
+    normalizedHostname: result.websiteUrl
+      ? normalizedHostnameForUrl(result.websiteUrl)
       : null,
   }));
 
@@ -60,12 +60,12 @@ async function main() {
     );
   }
   const websiteCounts: Record<string, number> = {};
-  for (const { normalizedOrigin } of results) {
-    if (!normalizedOrigin) {
+  for (const { normalizedHostname } of results) {
+    if (!normalizedHostname) {
       continue;
     }
-    websiteCounts[normalizedOrigin] =
-      (websiteCounts[normalizedOrigin] || 0) + 1;
+    websiteCounts[normalizedHostname] =
+      (websiteCounts[normalizedHostname] || 0) + 1;
   }
 
   const popularWebsiteCountsSorted = Object.entries(websiteCounts)
@@ -76,7 +76,9 @@ async function main() {
   const { left: remainingResults, right: massMarketResults } = pipe(
     missingTitleRemoved,
     partition((r) =>
-      r.normalizedOrigin ? MASS_MARKET_ORIGINS.has(r.normalizedOrigin) : false
+      r.normalizedHostname
+        ? MASS_MARKET_HOSTNAMES.has(r.normalizedHostname)
+        : false
     )
   );
 
