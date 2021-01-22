@@ -1,3 +1,5 @@
+// any packages referenced here must also be present in the top-level
+// package.json, or else extending this config fails
 module.exports = {
   env: {
     es2021: true,
@@ -20,4 +22,3 @@ module.exports = {
     "@typescript-eslint/consistent-type-definitions": ["warn", "interface"], // interfaces more performant
   },
 };
-
