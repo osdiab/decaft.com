@@ -557,15 +557,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["@emotion/core", [
-        ["npm:11.0.0", {
-          "packageLocation": "./.yarn/cache/@emotion-core-npm-11.0.0-03ccf93fb4-814026f08c.zip/node_modules/@emotion/core/",
-          "packageDependencies": [
-            ["@emotion/core", "npm:11.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["@emotion/eslint-plugin", [
         ["npm:11.0.0", {
           "packageLocation": "./.yarn/cache/@emotion-eslint-plugin-npm-11.0.0-cc6a482eea-ba572dd80f.zip/node_modules/@emotion/eslint-plugin/",
@@ -3511,7 +3502,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.12.10"],
             ["@emotion/babel-plugin", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.1.2"],
             ["@emotion/babel-preset-css-prop", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.0.0"],
-            ["@emotion/core", "npm:11.0.0"],
             ["@emotion/eslint-plugin", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.0.0"],
             ["@emotion/react", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.1.4"],
             ["@types/node", "npm:14.14.20"],
@@ -3521,7 +3511,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:64f9761693adb969978f3cdfceede67a1aa9cb55ac7b5939f81a6b49fda3e35eda9181b4617d59a54c641e601aa073c4c61bf8ea45bc0afab74ba1a513d4628a#npm:6.15.0"],
             ["eslint-plugin-react", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:7.22.0"],
-            ["file-loader", "virtual:86cbf66406f17d3b5a8796891fce8224e27373ba40f98b9fdd6f7580ad10e7bec7be3b89605d5b7c4dc3156ddc8ba7d1b477227da02b28dcd95d9df2b48ca4c0#npm:6.2.0"],
             ["next", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:10.0.5"],
             ["next-compose-plugins", "npm:2.2.1"],
             ["next-optimized-images", "npm:3.0.0-canary.10"],

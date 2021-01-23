@@ -407,13 +407,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/core@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@emotion/core@npm:11.0.0"
-  checksum: 814026f08ca46fc19f1343c40f733bdfc4ffcfb7dd95f75b89353c987950db90ce181550e3d404784da764af523f3807c2e892c8859c24229789a91225906d34
-  languageName: node
-  linkType: hard
-
 "@emotion/eslint-plugin@npm:^11.0.0":
   version: 11.0.0
   resolution: "@emotion/eslint-plugin@npm:11.0.0"
@@ -2880,7 +2873,6 @@ __metadata:
     "@babel/core": ^7.12.10
     "@emotion/babel-plugin": ^11.1.2
     "@emotion/babel-preset-css-prop": ^11.0.0
-    "@emotion/core": ^11.0.0
     "@emotion/eslint-plugin": ^11.0.0
     "@emotion/react": ^11.1.4
     "@types/node": ^14.14.6
@@ -2890,7 +2882,6 @@ __metadata:
     eslint: ^7.17.0
     eslint-config-prettier: ^6.15.0
     eslint-plugin-react: ^7.21.5
-    file-loader: ^6.2.0
     next: 10.0.5
     next-compose-plugins: ^2.2.0
     next-optimized-images: 3.0.0-canary.10
@@ -3803,7 +3794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-loader@npm:^6.0.0, file-loader@npm:^6.2.0":
+"file-loader@npm:^6.0.0":
   version: 6.2.0
   resolution: "file-loader@npm:6.2.0"
   dependencies:
