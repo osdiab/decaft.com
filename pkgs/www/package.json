@@ -11,14 +11,13 @@
     "lint:fix": "eslint . --fix && prettier --write ."
   },
   "dependencies": {
-    "@babel/core": "^7.12.10",
-    "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.4",
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
     "@emotion/babel-plugin": "^11.1.2",
     "@emotion/babel-preset-css-prop": "^11.0.0",
     "@emotion/eslint-plugin": "^11.0.0",
@@ -29,7 +28,6 @@
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-react": "^7.21.5",
-    "file-loader": "^6.2.0",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "3.0.0-canary.10",
     "optimized-images-loader": "^0.4.0",
