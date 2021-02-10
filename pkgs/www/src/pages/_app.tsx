@@ -3,11 +3,11 @@ import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
-import "../styles/globals.css";
+import { Global } from "@emotion/react";
+import { globalCss } from "src/styles/global";
 
 // Retrieve Clerk settings from the environment
 const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
-const clerkSignInURL = process.env.NEXT_PUBLIC_CLERK_SIGN_IN;
 
 /**
  * List pages you want to be publicly accessible, or leave empty if
@@ -17,7 +17,11 @@ const clerkSignInURL = process.env.NEXT_PUBLIC_CLERK_SIGN_IN;
  *  "/foo/bar"       for pages/foo/bar.js
  *  "/foo/[...bar]"  for pages/foo/[...bar].js
  */
-const publicPages = [];
+const publicPages = new Set([
+  "/log-in/[[...index]]",
+  "/sign-up/[[...index]]",
+  "/",
+]);
 
 const MyApp: AppComponent = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -26,29 +30,32 @@ const MyApp: AppComponent = ({ Component, pageProps }) => {
    * Otherwise, use Clerk to require authentication.
    */
   return (
-    <ClerkProvider
-      frontendApi={clerkFrontendApi}
-      navigate={(to) => router.push(to)}
-    >
-      {publicPages.includes(router.pathname) ? (
-        <Component {...pageProps} />
-      ) : (
-        <>
-          <SignedIn>
-            <Component {...pageProps} />
-          </SignedIn>
-          <SignedOut>
-            <RedirectToSignIn />
-          </SignedOut>
-        </>
-      )}
-    </ClerkProvider>
+    <>
+      <Global styles={globalCss} />
+      <ClerkProvider
+        frontendApi={clerkFrontendApi}
+        navigate={(to) => router.push(to)}
+      >
+        {publicPages.has(router.pathname) ? (
+          <Component {...pageProps} />
+        ) : (
+          <>
+            <SignedIn>
+              <Component {...pageProps} />
+            </SignedIn>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
+          </>
+        )}
+      </ClerkProvider>
+    </>
   );
 };
 
 function RedirectToSignIn() {
   useEffect(() => {
-    window.location.href = clerkSignInURL;
+    window.location.href = "/log-in";
   });
   return null;
 }
