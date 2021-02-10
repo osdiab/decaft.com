@@ -3534,6 +3534,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:64f9761693adb969978f3cdfceede67a1aa9cb55ac7b5939f81a6b49fda3e35eda9181b4617d59a54c641e601aa073c4c61bf8ea45bc0afab74ba1a513d4628a#npm:6.15.0"],
             ["eslint-plugin-react", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:7.22.0"],
+            ["fp-ts", "npm:2.9.5"],
             ["next", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:10.0.5"],
             ["next-compose-plugins", "npm:2.2.1"],
             ["next-optimized-images", "npm:3.0.0-canary.10"],
@@ -4727,6 +4728,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fp-ts-npm-2.9.3-600235b229-d32ea0a319.zip/node_modules/fp-ts/",
           "packageDependencies": [
             ["fp-ts", "npm:2.9.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.9.5", {
+          "packageLocation": "./.yarn/cache/fp-ts-npm-2.9.5-2058b93e83-de7dfc2106.zip/node_modules/fp-ts/",
+          "packageDependencies": [
+            ["fp-ts", "npm:2.9.5"]
           ],
           "linkType": "HARD",
         }]
