@@ -1,14 +1,14 @@
-import { SignedIn, SignUp } from "@clerk/clerk-react";
+import { SignUp } from "@clerk/clerk-react";
 import { css } from "@emotion/react";
 import { NextPage } from "next";
-import Link from "next/link";
-import { Redirect } from "src/components/Redirect";
+import { DefaultLayout } from "src/components/layout/Default";
 import { pageSectionCss } from "src/styles/pageSection";
 import { verticalStackCss } from "src/styles/spacing";
 
 const signUpFormCss = css`
   .cl-sign-up {
-    background: none;
+    background: none !important;
+    box-shadow: none !important;
     padding: 0 !important;
   }
   .cl-auth-form-header {
@@ -18,19 +18,12 @@ const signUpFormCss = css`
 
 const SignUpPage: NextPage = () => {
   return (
-    <div css={[verticalStackCss.l, pageSectionCss]}>
-      <SignedIn>
-        <Redirect to="/" />
-      </SignedIn>
+    <DefaultLayout mainCss={[verticalStackCss.l, pageSectionCss]}>
       <h1>Sign up for Decaft</h1>
-      <p>
-        <span>Already have an account?</span>{" "}
-        <Link href="/log-in">Log in instead</Link>
-      </p>
       <div css={signUpFormCss}>
-        <SignUp routing="path" path="/sign-up" />
+        <SignUp routing="path" path="/sign-up" signInURL="/log-in" />
       </div>
-    </div>
+    </DefaultLayout>
   );
 };
 export default SignUpPage;

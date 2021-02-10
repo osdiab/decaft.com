@@ -1,5 +1,11 @@
 import { AppComponent } from "next/dist/next-server/lib/router/router";
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-react";
+import {
+  ClerkLoaded,
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  useClerk,
+} from "@clerk/clerk-react";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
@@ -23,6 +29,13 @@ const publicPages = new Set([
   "/",
 ]);
 
+const ClerkLog = () => {
+  const clerk = useClerk();
+  useEffect(() => {
+    console.log(clerk);
+  }, []);
+  return null;
+};
 const MyApp: AppComponent = ({ Component, pageProps }) => {
   const router = useRouter();
   /**
@@ -36,6 +49,9 @@ const MyApp: AppComponent = ({ Component, pageProps }) => {
         frontendApi={clerkFrontendApi}
         navigate={(to) => router.push(to)}
       >
+        <ClerkLoaded>
+          <ClerkLog />
+        </ClerkLoaded>
         {publicPages.has(router.pathname) ? (
           <Component {...pageProps} />
         ) : (
