@@ -460,6 +460,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@clerk/clerk-react", [
+        ["npm:1.1.1", {
+          "packageLocation": "./.yarn/cache/@clerk-clerk-react-npm-1.1.1-a0d5062ee1-93c3b6329c.zip/node_modules/@clerk/clerk-react/",
+          "packageDependencies": [
+            ["@clerk/clerk-react", "npm:1.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:1.1.1", {
+          "packageLocation": "./.yarn/$$virtual/@clerk-clerk-react-virtual-d10657ae02/0/cache/@clerk-clerk-react-npm-1.1.1-a0d5062ee1-93c3b6329c.zip/node_modules/@clerk/clerk-react/",
+          "packageDependencies": [
+            ["@clerk/clerk-react", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:1.1.1"],
+            ["@types/react", "npm:16.14.2"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@emotion/babel-plugin", [
         ["npm:11.1.2", {
           "packageLocation": "./.yarn/cache/@emotion-babel-plugin-npm-11.1.2-b446077e1b-2b8000817a.zip/node_modules/@emotion/babel-plugin/",
@@ -3500,6 +3522,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["decaft.com", "workspace:pkgs/www"],
             ["@babel/core", "npm:7.12.10"],
+            ["@clerk/clerk-react", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:1.1.1"],
             ["@emotion/babel-plugin", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.1.2"],
             ["@emotion/babel-preset-css-prop", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.0.0"],
             ["@emotion/eslint-plugin", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:11.0.0"],
@@ -3519,6 +3542,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:17.0.1"],
             ["react-optimized-image", "npm:0.4.1"],
+            ["swr", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:0.4.2"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
@@ -3629,6 +3653,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/depd-npm-1.1.2-b0c8414da7-f45566ff70.zip/node_modules/depd/",
           "packageDependencies": [
             ["depd", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dequal", [
+        ["npm:2.0.2", {
+          "packageLocation": "./.yarn/cache/dequal-npm-2.0.2-370927eb6c-3b5b019a87.zip/node_modules/dequal/",
+          "packageDependencies": [
+            ["dequal", "npm:2.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -9116,6 +9149,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stable", "npm:0.1.8"],
             ["unquote", "npm:1.1.1"],
             ["util.promisify", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["swr", [
+        ["npm:0.4.2", {
+          "packageLocation": "./.yarn/cache/swr-npm-0.4.2-7ac07842af-c3643842fc.zip/node_modules/swr/",
+          "packageDependencies": [
+            ["swr", "npm:0.4.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:0.4.2", {
+          "packageLocation": "./.yarn/$$virtual/swr-virtual-b6e919ee54/0/cache/swr-npm-0.4.2-7ac07842af-c3643842fc.zip/node_modules/swr/",
+          "packageDependencies": [
+            ["swr", "virtual:c60b7b7bef21b2b953a2e869df1d6f1f9edff50d10b8d20c0001e2f8ea11368e0cc2fe261a33098567a347e74a376febb70c5d9f37d3be8ca232d7d8d6f5e508#npm:0.4.2"],
+            ["@types/react", "npm:16.14.2"],
+            ["dequal", "npm:2.0.2"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
           ],
           "linkType": "HARD",
         }]
